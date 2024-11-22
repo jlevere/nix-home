@@ -14,7 +14,6 @@
     bat
     binutils
     canvas-cli.packages.x86_64-linux.default
-    ffmpeg
     file
     gdb
     ghidra
@@ -24,8 +23,7 @@
     pythonWithPackages
     ripgrep
     strace
-    typst
-    typst-lsp
+    ltrace
     unzip
     wget
     zellij

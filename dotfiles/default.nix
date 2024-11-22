@@ -12,19 +12,15 @@
   home.keyboard = null;
 
   home.packages = with pkgs; [
-    (nerdfonts.override {fonts = ["JetBrainsMono"];})
+    (nerdfonts.override {fonts = ["CascadiaCode"];})
     open-sans
   ];
 
   fonts.fontconfig.enable = true;
 
-  # programs.firefox = {
-  #   enable = true;
-  # };
 
   programs.direnv = {
     enable = true;
-    # enableFishIntegration = true;
     nix-direnv.enable = true;
   };
 
@@ -60,6 +56,12 @@
         src = pkgs.fishPlugins.tide.src;
       }
     ];
+    functions = {
+        __fish_command_not_found_handler = {
+          body = "__fish_default_command_not_found_handler $argv[1]";
+          onEvent = "fish_command_not_found";
+        };
+      };
   };
 
   home.activation.configure-tide = lib.hm.dag.entryAfter ["writeBoundary"] ''
@@ -67,7 +69,6 @@
   '';
 
   programs.zellij = {
-    enable = true;
     enableFishIntegration = true;
     settings = {
       theme = "catppuccin-mocha";

@@ -31,6 +31,11 @@
     generateCaches = true;
   };
 
+
+  home.file."~/.ssh/allowed_signers".text = ''
+    * ${config.home.homeDirectory}/.ssh/id_ed25519.pub
+  '';
+
   programs.git = {
     enable = true;
     ignores = [
@@ -38,6 +43,15 @@
     ];
     userEmail = "71566629+jLevere@users.noreply.github.com";
     userName = "jLevere";
+
+    extraConfig = {
+
+      commit.gpgsign = true;
+      gpg.format = "ssh";
+      gpg.allowedSignersFile = "${config.home.homeDirectory}/.ssh/allowed_signers";
+      user.signingkey = "${config.home.homeDirectory}/.ssh/id_ed25519.pub";
+
+    };
   };
 
   programs.gh = {

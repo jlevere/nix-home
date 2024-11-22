@@ -49,7 +49,7 @@
 
       commit.gpgsign = true;
       gpg.format = "ssh";
-      gpg.allowedSignersFile = "${config.home.homeDirectory}/.ssh/allowed_signers";
+      gpg.ssh.allowedSignersFile = "${config.home.homeDirectory}/.ssh/allowed_signers";
       user.signingkey = "${config.home.homeDirectory}/.ssh/id_ed25519.pub";
 
     };

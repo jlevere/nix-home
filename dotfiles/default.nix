@@ -32,7 +32,7 @@
   };
 
 
-  home.file."~/.ssh/allowed_signers".text = ''
+  home.file."${config.home.homeDirectory}/.ssh/allowed_signers".text = ''
     * ${config.home.homeDirectory}/.ssh/id_ed25519.pub
   '';
 

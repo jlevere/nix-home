@@ -32,10 +32,13 @@
   };
 
 
-  home.file."${config.home.homeDirectory}/.ssh/allowed_signers".text = builtins.readFile (builtins.fetchurl {
-    url = "https://github.com/jLevere.keys";
-    sha256 = "1g87mxaaizyn8y5l0mdkxh14gywp4xjxlhxx2327m1q528bzn7gp";
-  });
+  home.file."${config.home.homeDirectory}/.ssh/allowed_signers".text = let
+    pubkey = builtins.readFile (builtins.fetchurl {
+      url = "https://github.com/jLevere.keys";
+      sha256 = "1g87mxaaizyn8y5l0mdkxh14gywp4xjxlhxx2327m1q528bzn7gp";
+    });
+  in
+    "71566629+jLevere@users.noreply.github.com ${pubkey}";
 
   programs.git = {
     enable = true;

@@ -20,6 +20,7 @@
     just
     ltrace
     neofetch
+    nixfmt-rfc-style
     pythonWithPackages
     ripgrep
     strace

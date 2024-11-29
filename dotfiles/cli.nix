@@ -18,13 +18,14 @@
     ghidra
     jq
     just
+    ltrace
     neofetch
     pythonWithPackages
     ripgrep
     strace
-    ltrace
     unzip
     wget
+    uv
     zellij
     zip
   ];

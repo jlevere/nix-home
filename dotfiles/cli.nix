@@ -13,7 +13,6 @@
   in [
     bat
     binutils
-    canvas-cli.packages.x86_64-linux.default
     file
     gdb
     ghidra

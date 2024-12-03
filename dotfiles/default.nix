@@ -11,12 +11,12 @@
 
   home.keyboard = null;
 
+  fonts.fontconfig.enable = true;
+
   home.packages = with pkgs; [
-    (nerdfonts.override {fonts = ["CascadiaCode"];})
+    nerd-fonts.caskaydia-cove
     open-sans
   ];
-
-  fonts.fontconfig.enable = true;
 
 
   programs.direnv = {

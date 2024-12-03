@@ -1,6 +1,7 @@
 {
   pkgs,
   canvas-cli,
+  alejandra,
   config,
   ...
 }: {
@@ -11,6 +12,7 @@
         pwntools
       ]);
   in [
+    alejandra
     bat
     binutils
     file
@@ -20,13 +22,12 @@
     just
     ltrace
     neofetch
-    nixfmt-rfc-style
+    canvas-cli.packages.x86_64-linux.default
     pythonWithPackages
     ripgrep
     strace
     unzip
     wget
-    uv
     zellij
     zip
   ];

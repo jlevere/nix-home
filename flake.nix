@@ -3,7 +3,7 @@
 
   inputs = {
     nixpkgs = {
-      url = "https://flakehub.com/f/NixOS/nixpkgs/0.1.*.tar.gz";
+      url = "github:nixos/nixpkgs/nixpkgs-unstable";
     };
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -16,6 +16,15 @@
     nix-vscode-extensions = {
       url = "github:nix-community/nix-vscode-extensions";
     };
+    canvas-cli = {
+      url = "github:mbund/canvas-cli";
+    };
+    alejandra = {
+      url = "github:kamadorueda/alejandra/3.1.0";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+
   };
 
   outputs = {

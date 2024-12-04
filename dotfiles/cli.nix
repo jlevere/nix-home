@@ -12,7 +12,7 @@
         pwntools
       ]);
   in [
-    alejandra
+    alejandra.packages.x86_64-linux.default
     bat
     binutils
     file

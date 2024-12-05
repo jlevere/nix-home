@@ -1,0 +1,41 @@
+name: Format with alejandra
+on:
+  push:
+    paths:
+      - "**.nix"
+  workflow_dispatch:
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out Repository
+        uses: actions/checkout@v4
+
+      - name: Install Nix
+        uses: cachix/install-nix-action@v30
+        with:
+          nix_path: nixpkgs=channel:nixos-unstable
+
+      - name: Check for formatting issues
+        uses: workflow/nix-shell-action@main
+        continue-on-error: true
+        with:
+          packages: alejandra
+          script: |
+            alejandra . -c
+
+      - name: Format code with alejandra
+        uses: workflow/nix-shell-action@main
+        with:
+          packages: alejandra
+          script: |
+            alejandra .
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "format with alejandra"

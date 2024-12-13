@@ -19,6 +19,7 @@
     file
     gdb
     ghidra
+    gnumake
     jq
     just
     ltrace

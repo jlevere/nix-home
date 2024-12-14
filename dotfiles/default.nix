@@ -62,6 +62,7 @@
     enable = true;
     shellAliases = {
       "g" = "git";
+      "gs" = "git status";
     };
     plugins = [
       {
@@ -75,7 +76,7 @@
         onEvent = "fish_command_not_found";
       };
       code = {
-        body = "/mnt/c/Users/winlap1/AppData/local/Programs/Microsoft\\ VS\\ Code/bin/code";
+        body = "/mnt/c/Users/winlap1/AppData/local/Programs/Microsoft\\ VS\\ Code/bin/code $argv";
       };
       fish_greeting = {
         body = "";

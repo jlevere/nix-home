@@ -74,6 +74,12 @@
         body = "__fish_default_command_not_found_handler $argv[1]";
         onEvent = "fish_command_not_found";
       };
+      code = {
+        body = "/mnt/c/Users/winlap1/AppData/local/Programs/Microsoft\\ VS\\ Code/bin/code";
+      };
+      fish_greeting = {
+        body = "";
+      };
     };
   };
 

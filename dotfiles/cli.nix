@@ -24,6 +24,7 @@
     just
     ltrace
     neofetch
+    netcat
     canvas-cli.packages.x86_64-linux.default
     pythonWithPackages
     ripgrep

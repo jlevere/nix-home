@@ -16,6 +16,7 @@
     alejandra.packages.x86_64-linux.default
     bat
     binutils
+    canvas-cli.packages.x86_64-linux.default
     file
     gdb
     ghidra
@@ -25,10 +26,11 @@
     ltrace
     neofetch
     netcat
-    canvas-cli.packages.x86_64-linux.default
     pythonWithPackages
     ripgrep
+    socat
     strace
+    tcpdump
     unzip
     wget
     zellij

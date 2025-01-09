@@ -31,6 +31,7 @@
     socat
     strace
     tcpdump
+    terraform
     unzip
     wget
     zellij

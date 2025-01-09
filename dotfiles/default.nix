@@ -16,6 +16,7 @@
   home.packages = with pkgs; [
     nerd-fonts.caskaydia-cove
     open-sans
+    tex-gyre.termes
   ];
 
   programs.direnv = {

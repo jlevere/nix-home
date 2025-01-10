@@ -14,6 +14,7 @@
   in [
     act
     alejandra.packages.x86_64-linux.default
+    awscli2
     bat
     binutils
     canvas-cli.packages.x86_64-linux.default

@@ -31,6 +31,7 @@
     ripgrep
     socat
     strace
+    go-task
     tcpdump
     terraform
     unzip

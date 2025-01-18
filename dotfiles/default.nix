@@ -14,9 +14,9 @@
   fonts.fontconfig.enable = true;
 
   home.packages = with pkgs; [
+    gyre-fonts
     nerd-fonts.caskaydia-cove
     open-sans
-    tex-gyre.termes
   ];
 
   programs.direnv = {

@@ -17,6 +17,7 @@
     gyre-fonts
     nerd-fonts.caskaydia-cove
     open-sans
+    doulos-sil
   ];
 
   programs.direnv = {

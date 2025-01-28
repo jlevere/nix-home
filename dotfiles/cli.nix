@@ -34,6 +34,7 @@
     go-task
     tcpdump
     terraform
+    inetutils
     unzip
     wget
     zellij

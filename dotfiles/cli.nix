@@ -36,6 +36,7 @@
     terraform
     inetutils
     unzip
+    usbutils
     wget
     zellij
     zip

@@ -29,6 +29,7 @@
     netcat
     pythonWithPackages
     ripgrep
+    rustscan
     socat
     strace
     go-task

@@ -43,6 +43,7 @@
     enable = true;
     ignores = [
       ".direnv"
+      ".envrc"
     ];
     userEmail = "71566629+jLevere@users.noreply.github.com";
     userName = "jLevere";

@@ -26,6 +26,7 @@
     just
     ltrace
     neofetch
+    nil
     netcat
     pythonWithPackages
     ripgrep

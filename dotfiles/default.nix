@@ -35,7 +35,7 @@
   home.file."${config.home.homeDirectory}/.ssh/allowed_signers".text = let
     pubkey = builtins.readFile (builtins.fetchurl {
       url = "https://github.com/jLevere.keys";
-      sha256 = "1g87mxaaizyn8y5l0mdkxh14gywp4xjxlhxx2327m1q528bzn7gp";
+      sha256 = "0jff3j8dyypyrrmpi0i7d0rj1bk0qr03m2ckvvi3n8s8xhc5d6ky";
     });
   in "71566629+jLevere@users.noreply.github.com ${pubkey}";
 

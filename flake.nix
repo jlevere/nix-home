@@ -47,7 +47,7 @@
       inherit pkgs;
       extraSpecialArgs = attrs;
       modules = [
-        ./dotfiles
+        ./home
         nix-index-database.hmModules.nix-index
         {home.username = "admin";}
         {home.stateVersion = "24.05";}

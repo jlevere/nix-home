@@ -39,6 +39,7 @@
     inetutils
     unzip
     usbutils
+    uv
     wget
     zellij
     zip

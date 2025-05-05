@@ -81,6 +81,12 @@
       code = {
         body = "/mnt/c/Users/winlap1/AppData/local/Programs/Microsoft\\ VS\\ Code/bin/code $argv";
       };
+      cursor = {
+        body = "/mnt/c/Users/winlap1/AppData/Local/Programs/cursor/resources/app/bin/cursor $argv";
+      };
+      clip = {
+        body = "/mnt/c/windows/System32/clip.exe $argv";
+      };
       fish_greeting = {
         body = "";
       };

@@ -18,6 +18,7 @@
     bat
     binutils
     canvas-cli.packages.x86_64-linux.default
+    dig
     file
     gdb
     ghidra
@@ -35,6 +36,7 @@
     strace
     go-task
     tcpdump
+    tree
     terraform
     inetutils
     unzip

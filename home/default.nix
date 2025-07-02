@@ -56,6 +56,19 @@
     };
   };
 
+  services.ssh-agent = {
+    enable = true;
+  };
+
+  programs.ssh = {
+    enable = true;
+    addKeysToAgent = "yes";
+    matchBlocks."*" = {
+      identityFile = ["${config.home.homeDirectory}/.ssh/id_ed25519"];
+      identitiesOnly = true;
+    };
+  };
+
   programs.gh = {
     enable = true;
     gitCredentialHelper.enable = true;

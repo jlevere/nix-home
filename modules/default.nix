@@ -4,7 +4,7 @@
   ...
 }: {
   imports = [
-    ./cli.nix
+    ./pkgs.nix
     ./fish.nix
     ./git.nix
   ];
@@ -41,8 +41,6 @@
       pane_frames = false;
     };
   };
-
-  programs.nix-index.enable = true;
 
   programs.home-manager.enable = true;
 

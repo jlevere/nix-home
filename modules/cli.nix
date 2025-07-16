@@ -2,7 +2,6 @@
   pkgs,
   canvas-cli,
   alejandra,
-  config,
   ...
 }: {
   home.packages = with pkgs; let

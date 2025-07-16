@@ -2,8 +2,8 @@
 
 ### Setup steps:
 - [Have nix installed](https://github.com/DeterminateSystems/nix-installer)
-- Clone repo
-- `nix run .#homeConfigurations.admin.activationPackage`
+- Clone repo into `.config` as `home-manager`
+- Run `home-manager switch`
 
 
 ### Warnings

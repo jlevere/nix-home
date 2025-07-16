@@ -8,6 +8,11 @@
     shellAliases = {
       "g" = "git";
       "gs" = "git status";
+      "ga" = "git add";
+      "gd" = "git diff";
+      "gf" = "git fetch";
+      "gp" = "git push";
+      "gt" = "git ls-files | tree --fromfile --charset=ascii";
     };
     plugins = [
       {

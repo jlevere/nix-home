@@ -1,6 +1,5 @@
 {
   pkgs,
-  canvas-cli,
   alejandra,
   ...
 }: {
@@ -16,7 +15,6 @@
     awscli2
     bat
     binutils
-    canvas-cli.packages.x86_64-linux.default
     dig
     file
     gdb

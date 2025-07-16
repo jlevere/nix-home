@@ -12,9 +12,6 @@
     nix-vscode-extensions = {
       url = "github:nix-community/nix-vscode-extensions";
     };
-    canvas-cli = {
-      url = "github:mbund/canvas-cli";
-    };
     alejandra = {
       url = "github:kamadorueda/alejandra/3.1.0";
       inputs.nixpkgs.follows = "nixpkgs";

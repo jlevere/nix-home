@@ -16,11 +16,17 @@
       url = "github:kamadorueda/alejandra/3.1.0";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nix-index-database = {
+      url = "github:Mic92/nix-index-database";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
     nixpkgs,
     home-manager,
+    nix-index-database,
     ...
   } @ inputs: let
     system = "x86_64-linux";
@@ -35,6 +41,7 @@
       extraSpecialArgs = inputs;
       modules = [
         ./home.nix
+        nix-index-database.homeModules.nix-index
       ];
     };
   };
